@@ -52,15 +52,45 @@ h1 {
     border-bottom: solid;
     border-color: #333333f6;
     width: 80%;
+} h4 {
+    margin-top: 1.19em;
+    padding-bottom: 5px;
+    margin-bottom: 1px;
+
+    font-size: 20px;
+    letter-spacing: -0.011em;
+    line-height: 52px;
+    font-weight: 700;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    color: #333333;
+
+    border-bottom: solid;
+    border-color: #333333f6;
+    width: 70%;
 } p {
     letter-spacing: -0.003em;
-    line-height: 32px;
+    line-height: 24px;
     font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
     color: #242424;
     font-weight: 400;
-    margin-top: 2.14em;
-    font-size: 20px;
+    margin-top: 1.14em;
+    font-size: 18px;
     margin-bottom: -0.46em;
+} li {
+    letter-spacing: -0.003em;
+    line-height: 18px;
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+    color: #242424;
+    font-weight: 400;
+    margin-top: 1.14em;
+    font-size: 18px;
+    margin-bottom: -0.46em;
+}
+
+img {
+    max-width: 680px;
+    margin-top: 10px;
 }
 
 /* introduction */
