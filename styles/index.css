@@ -88,6 +88,10 @@ h1 {
     margin-bottom: -0.46em;
 }
 
+.indent {
+    margin-left: 20px;
+}
+
 img {
     max-width: 680px;
     margin-top: 10px;
