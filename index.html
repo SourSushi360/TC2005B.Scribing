@@ -41,6 +41,13 @@
                             <li><a href="#Switch">Switch</a></li>
                             <li><a href="#Loops">Loops</a></li>
                         </ol>
+                        <li><a href="#React">React</a></li>
+                        <ol type="a">
+                            <li><a href="#Data Structures">Data Structures</a></li>
+                            <li><a href="#Hooks">Hooks</a></li>
+                            <li><a href="#useState">useState</a></li>
+                            <li><a href="#useEffect">useEffect</a></li>
+                        </ol>
                     </ol>
                 </div>
                 <div class="divisor">
@@ -353,6 +360,95 @@
                     <p>
                         The block of code is executed first, and then the condition is checked. If the condition is true,
                         the loop continues; otherwise, it stops.
+                    </p>
+                </div>
+                <div class="divisor">
+                    <span></span> <span></span> <span></span>
+                </div>
+            </section>
+            <section id="class3">
+                <div>
+                    <h2 id="React">React</h2>
+                    <p>
+                        The library for web and native user interfaces. 
+                        React lets you build user interfaces out of individual pieces called components.
+                    </p>
+                    <p>
+                        React components are JavaScript functions. Want to show some content conditionally?
+                        Use an if statement. Displaying a list? Try array map().
+                    </p>
+                </div>
+                <div>
+                    <h3 id="Data Structures">Data Structures</h3>
+                    <p>Numbers, Booleans, and strings are the atoms from which data structures are built.</p>
+                    <h4>Data Sets</h4>
+                    <p>
+                        To work with a chunk of digital data, we first have to find a way to represent it in our machine’s
+                        memory.
+                        <p class="indent">
+                            > let listOfNumbers = [2, 3, 5, 7, 11]; <br>
+                            > console.log(listOfNumbers[2]); <br>
+                            > console.log(listOfNumbers[0]); <br>
+                            > console.log(listOfNumbers[2 - 1]); <br>
+                            > proprietary + confidential www.wiz
+                        </p>
+                    </p>
+                </div>
+                <div>
+                    <h3 id="Hooks">Hooks</h3>
+                    <p>
+                        Hooks let you use different React features from your components. You can either use the built-in
+                        Hooks or combine them to build your own.
+                    </p>
+                    <h4>State Hooks</h4>
+                    <p>
+                        State lets a component “remember” information like user input. For example, a form component
+                        can use state to store the input value, while an image gallery component can use state to store
+                        the selected image index.
+                    </p>
+                    <h4>Effect Hooks</h4>
+                    <p>
+                        Effects let a component connect to and synchronize with external systems. This includes dealing with
+                        network, browser DOM, animations, widgets written using a different UI library, and other non-React
+                        code.
+                    </p>
+                </div>
+                <div>
+                    <h3 id="useState">useState</h3>
+                    <p>
+                        Components often need to change what is displayed on the screen as a result of interaction.
+                        Writing inside a form should update the text field, clicking "next" in an image carousel should
+                        change the displayed image; clicking a button to purchase a product should update the shopping
+                        cart. Components need to "remember" things: the text field, the current image, the shopping
+                        cart. <br>
+                        In React, this type of memory within components is known as state.
+                    </p>
+                    <p>
+                        The useState hook provides two things: <br>
+                        - A state variable to maintain data between renders. <br>
+                        - A function to set the state to update the variable and trigger React to re-render the component.
+                        <p class="indent">
+                            > const [index, setIndex] = useState(0);
+                            <br>
+                            index is a state variable and setIndex is the function that sets the state.
+                        </p>
+                    </p>
+                </div>
+                <div>
+                    <h3 id="useEffect">useEffect</h3>
+                    <p>
+                        Some components need to stay connected to the network, some browser API, or a third-party
+                        library, while they are displayed on the page. These systems aren’t controlled by React, so they
+                        are called external.
+                        <p class="indent">
+                            > useEffect(() => { <br>
+                            >     const connection = createConnection(serverUrl, roomId); <br>
+                            >      connection.connect(); <br>
+                            >     return () => { <br>
+                            >      connection.disconnect(); <br>
+                            >     }; <br>
+                            >      }, [serverUrl, roomId]);
+                        </p>
                     </p>
                 </div>
                 <div class="divisor">
